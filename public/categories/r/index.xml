@@ -13,6 +13,17 @@
     
     
     <item>
+      <title>Scatterplot Fun</title>
+      <link>/post/scatterplot-fun/</link>
+      <pubDate>Thu, 28 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/scatterplot-fun/</guid>
+      <description>Here we go on our first adventure in data visualization. Let’s take the homeruns and strikeouts from the Lahman database of baseball statistics and make a scatterplot!
+First, we need to load our libraries. This tells the computer what sets of data to look at!
+library(Lahman)library(sqldf)library(ggplot2)Next, we are going to specify what we are looking for. In this case, career homeruns and strikeouts from players who had more than 400 homeruns.</description>
+    </item>
+    
+    <item>
       <title>Welcome to Data Science</title>
       <link>/post/welcome-to-data-science/</link>
       <pubDate>Thu, 28 Sep 2017 00:00:00 +0000</pubDate>

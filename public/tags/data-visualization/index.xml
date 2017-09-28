@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Data Science on John Doe&#39;s blog</title>
-    <link>/tags/data-science/</link>
-    <description>Recent content in Data Science on John Doe&#39;s blog</description>
+    <title>Data Visualization on John Doe&#39;s blog</title>
+    <link>/tags/data-visualization/</link>
+    <description>Recent content in Data Visualization on John Doe&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Powered by [Hugo](http://gohugo.io).</copyright>
     <lastBuildDate>Thu, 28 Sep 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/data-science/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/data-visualization/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -21,16 +21,6 @@
       <description>Here we go on our first adventure in data visualization. Let’s take the homeruns and strikeouts from the Lahman database of baseball statistics and make a scatterplot!
 First, we need to load our libraries. This tells the computer what sets of data to look at!
 library(Lahman)library(sqldf)library(ggplot2)Next, we are going to specify what we are looking for. In this case, career homeruns and strikeouts from players who had more than 400 homeruns.</description>
-    </item>
-    
-    <item>
-      <title>Welcome to Data Science</title>
-      <link>/post/welcome-to-data-science/</link>
-      <pubDate>Thu, 28 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/post/welcome-to-data-science/</guid>
-      <description>Hello!
-Welcome to my blog about Dr. Redmond’s Intro to Data Science class at Mercyhurst University! This blog is being created for and utilized in the MIS 150 class. We will be going through some data visualization tools. We will be using R Studio, SQL, and ggplot primarily to do this. If you are unfamiliar with SQL, feel free to go check out my website of tutorials and examples at https://sjense67.</description>
     </item>
     
   </channel>

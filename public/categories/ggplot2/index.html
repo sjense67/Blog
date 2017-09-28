@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Regression &middot; John Doe&#39;s blog</title>
+        <title>Ggplot2 &middot; John Doe&#39;s blog</title>
         <meta name="author">
         <meta name="description" content="The awesome blog of John Doe.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -46,31 +46,30 @@
         
             <article class="post">
     
-<h1><a href="/post/2015-07-23-r-rmarkdown/" title="Hello R Markdown">Hello R Markdown</a></h1>
+<h1><a href="/post/scatterplot-fun/" title="Scatterplot Fun">Scatterplot Fun</a></h1>
 
-<footer class="post-info">Posted on <span class="post-meta"><time datetime="2015.07.23">2015.07.23</time>
+<footer class="post-info">Posted on <span class="post-meta"><time datetime="2017.09.28">2017.09.28</time>
 
     &middot; Tagged in
         
-        <a href="/tags/r-markdown">r markdown</a>, 
+        <a href="/tags/scatterplot">scatterplot</a>, 
         
-        <a href="/tags/plot">plot</a>, 
+        <a href="/tags/data-science">data science</a>, 
         
-        <a href="/tags/regression">regression</a>
+        <a href="/tags/data-visualization">data visualization</a>
         
     
 
 </span>
 </footer>
 
-    <p>R Markdown
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com">http://rmarkdown.rstudio.com</a>.
-You can embed an R code chunk like this:
-summary(cars)</p>
-
-<h2 id="speed-dist-min-4-0-min-2-00-1st-qu-12-0-1st-qu-26-00-median-15-0-median-36-00-mean-15-4-mean-42-98-3rd-qu">speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</h2>
-&hellip;</p>
-    <a href="/post/2015-07-23-r-rmarkdown/" title="Hello R Markdown">Read more &raquo;</a>
+    <p>Here we go on our first adventure in data visualization. Let’s take the homeruns and strikeouts from the Lahman database of baseball statistics and make a scatterplot!
+First, we need to load our libraries. This tells the computer what sets of data to look at!
+library(Lahman)
+library(sqldf)
+library(ggplot2)
+Next, we are going to specify what we are looking for. In this case, career homeruns and strikeouts from players who had more than 400 homeruns.&hellip;</p>
+    <a href="/post/scatterplot-fun/" title="Scatterplot Fun">Read more &raquo;</a>
 </article>
 
         

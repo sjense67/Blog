@@ -1,0 +1,58 @@
+---
+title: Scatterplot Fun
+author: Sophia Jensen
+date: '2017-09-28'
+slug: scatterplot-fun
+categories:
+  - R
+  - ggplot2
+tags:
+  - scatterplot
+  - data science
+  - data visualization
+---
+
+Here we go on our first adventure in data visualization. Let's take the homeruns and strikeouts from the Lahman database of baseball statistics and make a scatterplot!
+
+
+First, we need to load our libraries. This tells the computer what sets of data to look at!
+
+```{r message=FALSE, warning=FALSE}
+library(Lahman)
+library(sqldf)
+library(ggplot2)
+```
+
+Next, we are going to specify what we are looking for. In this case, career homeruns and strikeouts from players who had more than 400 homeruns. Only the best for us.
+
+```{r}
+query<-"SELECT playerID,sum(HR),sum(SO)
+FROM Batting 
+GROUP BY playerID
+HAVING sum(HR)>400"
+sqldf(query)
+```
+
+Perfect. We have the information. Save it as a result for ease of use. 
+
+```{r}
+query<-"SELECT playerID,sum(HR) AS CareerHR,sum(SO) AS CareerSO
+FROM Batting
+GROUP BY playerID
+HAVING sum(HR)>400"
+result<-sqldf(query)
+```
+
+Okay, now the data pairs turn into points by associating homeruns with the y-axis and strikeouts with the x-axis. We are also going to add the graph title and axis labels in one fell swoop. Things are nicely distinct and easy to see with the ggplot2 coding. 
+
+```{r}
+ggplot()+
+geom_point(data=result,aes(x=CareerSO,y=CareerHR),size=3)+
+ggtitle("Career Strikeouts and Homeruns - The Best")+
+xlab("Career Strikeouts")+
+ylab("Career Homeruns")
+```
+
+Yay! Scatterplot! To break it down: ggplot()+ begins the scatterplot. geom_point() dictates that the data should be represented as points. The data being displayed is the result from the sql section earlier. The aes section refers to the aesthetic, dictating which axis should be which set of data. There are lots of options for personalization, but we are going to stick with basics for now. The three added lines deal with labels, to make things more clear for a reader. 
+
+See? That wasn't so bad! Tune in next time!
