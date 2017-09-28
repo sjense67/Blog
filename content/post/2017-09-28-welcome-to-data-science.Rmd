@@ -1,0 +1,19 @@
+---
+title: Welcome to Data Science
+author: Sophia Jensen
+date: '2017-09-28'
+slug: welcome-to-data-science
+categories:
+  - R
+  - welcome
+tags:
+  - sql
+  - data science
+  - beginning
+---
+
+Hello!
+
+Welcome to my blog about Dr. Redmond's Intro to Data Science class at Mercyhurst University! This blog is being created for and utilized in the MIS 150 class. We will be going through some data visualization tools. We will be using R Studio, SQL, and ggplot primarily to do this. If you are unfamiliar with SQL, feel free to go check out my website of tutorials and examples at https://sjense67.github.io/Website/ 
+
+My email and some social media are also in the sidebar if you want to contact me! Thanks for visitng my data science blog!
