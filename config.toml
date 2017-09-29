@@ -13,7 +13,7 @@ theme = "hugo-minimalist-theme"
     site_description = "Mercyhurst Intro to Data Science"
     location = "Mercyhurst University"
     # Link custom assets relative to /static
-    avatar = "img/profile-image.png"
+    avatar = "img/Profile.jpg"
     header_background = "img/Header1.jpg"
     header_title = "Data Science by Sophia Jensen"
     copyright = "Powered by [Hugo](http://gohugo.io)."
