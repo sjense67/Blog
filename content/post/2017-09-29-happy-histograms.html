@@ -1,0 +1,49 @@
+---
+title: Happy Histograms
+author: Sophia Jensen
+date: '2017-09-29'
+slug: happy-histograms
+categories:
+  - ggplot2
+  - R
+tags:
+  - data visualization
+  - sql
+  - histogram
+---
+
+
+
+<p>Up next on the data visualization journey: Histograms!</p>
+<p>Histograms what people often think of as bar graphs. They show the spread and shape of a single set of data. For our example, let’s look at the weights of MLB players through the Master table in the Lahman database. While some weights aren’t available, the program with automatically exclude those rows, which do not have a numerical value.</p>
+<pre class="r"><code>library(Lahman)
+library(sqldf)
+library(ggplot2)</code></pre>
+<p>Here is the sql request:</p>
+<pre class="r"><code>query&lt;-&quot;SELECT weight FROM Master&quot;
+result&lt;-sqldf(query)</code></pre>
+<p>Turning the data into a histogram is very similar to turning data into a scatterplot. Again, pieces are pretty clear and distinct in the ggplot script, so we are going to do everthing at once.</p>
+<pre class="r"><code>ggplot()+
+  geom_histogram(data=result,aes(x=weight),color=&quot;blue&quot;,fill=&quot;white&quot;,bins=60)+
+  ggtitle(&quot;Distribution of Baseball Player Bodyweight&quot;)+
+  xlab(&quot;Weight of player&quot;)+
+  ylab(&quot;Number of players&quot;)</code></pre>
+<pre><code>## Warning: Removed 854 rows containing non-finite values (stat_bin).</code></pre>
+<p><img src="/post/2017-09-29-happy-histograms_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p>Wonderful! Histogram! There are some things here that we did not see with the scatterplot. We used geom_histogram instead of geom_point, to get a histogram instead of a scatterplot. Here color refers to the border, so fill needs to be specified if one wants to change the main color of the bar. Bins refers to the number of bars shown. Below are a couple examples of how changing the bin number can dratistically change the histogram, and it’s usefulness.</p>
+<pre class="r"><code>ggplot()+
+  geom_histogram(data=result,aes(x=weight),color=&quot;blue&quot;,fill=&quot;white&quot;,bins=10)+
+  ggtitle(&quot;Distribution of Baseball Player Bodyweight&quot;)+
+  xlab(&quot;Weight of player&quot;)+
+  ylab(&quot;Number of players&quot;)</code></pre>
+<pre><code>## Warning: Removed 854 rows containing non-finite values (stat_bin).</code></pre>
+<p><img src="/post/2017-09-29-happy-histograms_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p>The histogram above has ten bars. To see extremes, the one below has 100. Our original had 60.</p>
+<pre class="r"><code>ggplot()+
+  geom_histogram(data=result,aes(x=weight),color=&quot;blue&quot;,fill=&quot;white&quot;,bins=100)+
+  ggtitle(&quot;Distribution of Baseball Player Bodyweight&quot;)+
+  xlab(&quot;Weight of player&quot;)+
+  ylab(&quot;Number of players&quot;)</code></pre>
+<pre><code>## Warning: Removed 854 rows containing non-finite values (stat_bin).</code></pre>
+<p><img src="/post/2017-09-29-happy-histograms_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<p>There you have it! Not too difficult, and easy enough to alter! Stay tuned for more data visualization!</p>

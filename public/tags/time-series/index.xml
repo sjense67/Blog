@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Time Series on DS by SJ</title>
+    <link>https://dsbysj.netlify.com/tags/time-series/</link>
+    <description>Recent content in Time Series on DS by SJ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Powered by [Hugo](http://gohugo.io).</copyright>
+    <lastBuildDate>Fri, 29 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://dsbysj.netlify.com/tags/time-series/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Time for Time Series</title>
+      <link>https://dsbysj.netlify.com/post/time-for-time-series/</link>
+      <pubDate>Fri, 29 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsbysj.netlify.com/post/time-for-time-series/</guid>
+      <description>Hello again! This time we are going to look at data visualization in the form of time series!
+A time series is similar to a scatterplot, in the way that it has two sets of data against each other. However, one of those sets of data is time. Let’s get started!
+library(Lahman)library(sqldf)library(ggplot2)We will look at Babe Ruth’s homeruns over his twenty-two seasons. Here is the sql request:</description>
+    </item>
+    
+  </channel>
+</rss>

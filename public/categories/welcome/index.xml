@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Welcome on John Doe&#39;s blog</title>
-    <link>/categories/welcome/</link>
-    <description>Recent content in Welcome on John Doe&#39;s blog</description>
+    <title>Welcome on DS by SJ</title>
+    <link>https://dsbysj.netlify.com/categories/welcome/</link>
+    <description>Recent content in Welcome on DS by SJ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Powered by [Hugo](http://gohugo.io).</copyright>
     <lastBuildDate>Thu, 28 Sep 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/welcome/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dsbysj.netlify.com/categories/welcome/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Welcome to Data Science</title>
-      <link>/post/welcome-to-data-science/</link>
+      <link>https://dsbysj.netlify.com/post/welcome-to-data-science/</link>
       <pubDate>Thu, 28 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>/post/welcome-to-data-science/</guid>
+      <guid>https://dsbysj.netlify.com/post/welcome-to-data-science/</guid>
       <description>Hello!
 Welcome to my blog about Dr. Redmond’s Intro to Data Science class at Mercyhurst University! This blog is being created for and utilized in the MIS 150 class. We will be going through some data visualization tools. We will be using R Studio, SQL, and ggplot primarily to do this. If you are unfamiliar with SQL, feel free to go check out my website of tutorials and examples at https://sjense67.</description>
     </item>

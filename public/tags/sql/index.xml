@@ -1,23 +1,45 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sql on John Doe&#39;s blog</title>
-    <link>/tags/sql/</link>
-    <description>Recent content in Sql on John Doe&#39;s blog</description>
+    <title>Sql on DS by SJ</title>
+    <link>https://dsbysj.netlify.com/tags/sql/</link>
+    <description>Recent content in Sql on DS by SJ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Powered by [Hugo](http://gohugo.io).</copyright>
-    <lastBuildDate>Thu, 28 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 Sep 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/sql/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dsbysj.netlify.com/tags/sql/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Happy Histograms</title>
+      <link>https://dsbysj.netlify.com/post/happy-histograms/</link>
+      <pubDate>Fri, 29 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsbysj.netlify.com/post/happy-histograms/</guid>
+      <description>Up next on the data visualization journey: Histograms!
+Histograms what people often think of as bar graphs. They show the spread and shape of a single set of data. For our example, let’s look at the weights of MLB players through the Master table in the Lahman database. While some weights aren’t available, the program with automatically exclude those rows, which do not have a numerical value.
+library(Lahman)library(sqldf)library(ggplot2)Here is the sql request:</description>
+    </item>
+    
+    <item>
+      <title>Time for Time Series</title>
+      <link>https://dsbysj.netlify.com/post/time-for-time-series/</link>
+      <pubDate>Fri, 29 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsbysj.netlify.com/post/time-for-time-series/</guid>
+      <description>Hello again! This time we are going to look at data visualization in the form of time series!
+A time series is similar to a scatterplot, in the way that it has two sets of data against each other. However, one of those sets of data is time. Let’s get started!
+library(Lahman)library(sqldf)library(ggplot2)We will look at Babe Ruth’s homeruns over his twenty-two seasons. Here is the sql request:</description>
+    </item>
+    
+    <item>
       <title>Welcome to Data Science</title>
-      <link>/post/welcome-to-data-science/</link>
+      <link>https://dsbysj.netlify.com/post/welcome-to-data-science/</link>
       <pubDate>Thu, 28 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>/post/welcome-to-data-science/</guid>
+      <guid>https://dsbysj.netlify.com/post/welcome-to-data-science/</guid>
       <description>Hello!
 Welcome to my blog about Dr. Redmond’s Intro to Data Science class at Mercyhurst University! This blog is being created for and utilized in the MIS 150 class. We will be going through some data visualization tools. We will be using R Studio, SQL, and ggplot primarily to do this. If you are unfamiliar with SQL, feel free to go check out my website of tutorials and examples at https://sjense67.</description>
     </item>

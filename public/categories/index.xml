@@ -1,40 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on John Doe&#39;s blog</title>
-    <link>/categories/</link>
-    <description>Recent content in Categories on John Doe&#39;s blog</description>
+    <title>Categories on DS by SJ</title>
+    <link>https://dsbysj.netlify.com/categories/</link>
+    <description>Recent content in Categories on DS by SJ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Powered by [Hugo](http://gohugo.io).</copyright>
     
-	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dsbysj.netlify.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Ggplot2</title>
-      <link>/categories/ggplot2/</link>
-      <pubDate>Thu, 28 Sep 2017 00:00:00 +0000</pubDate>
+      <link>https://dsbysj.netlify.com/categories/ggplot2/</link>
+      <pubDate>Fri, 29 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>/categories/ggplot2/</guid>
+      <guid>https://dsbysj.netlify.com/categories/ggplot2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R</title>
-      <link>/categories/r/</link>
-      <pubDate>Thu, 28 Sep 2017 00:00:00 +0000</pubDate>
+      <link>https://dsbysj.netlify.com/categories/r/</link>
+      <pubDate>Fri, 29 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>/categories/r/</guid>
+      <guid>https://dsbysj.netlify.com/categories/r/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Welcome</title>
-      <link>/categories/welcome/</link>
+      <link>https://dsbysj.netlify.com/categories/welcome/</link>
       <pubDate>Thu, 28 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>/categories/welcome/</guid>
+      <guid>https://dsbysj.netlify.com/categories/welcome/</guid>
       <description></description>
     </item>
     

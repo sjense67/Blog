@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Scatterplot on John Doe&#39;s blog</title>
-    <link>/tags/scatterplot/</link>
-    <description>Recent content in Scatterplot on John Doe&#39;s blog</description>
+    <title>Scatterplot on DS by SJ</title>
+    <link>https://dsbysj.netlify.com/tags/scatterplot/</link>
+    <description>Recent content in Scatterplot on DS by SJ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Powered by [Hugo](http://gohugo.io).</copyright>
     <lastBuildDate>Thu, 28 Sep 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/scatterplot/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dsbysj.netlify.com/tags/scatterplot/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Scatterplot Fun</title>
-      <link>/post/scatterplot-fun/</link>
+      <link>https://dsbysj.netlify.com/post/scatterplot-fun/</link>
       <pubDate>Thu, 28 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>/post/scatterplot-fun/</guid>
+      <guid>https://dsbysj.netlify.com/post/scatterplot-fun/</guid>
       <description>Here we go on our first adventure in data visualization. Let’s take the homeruns and strikeouts from the Lahman database of baseball statistics and make a scatterplot!
 First, we need to load our libraries. This tells the computer what sets of data to look at!
 library(Lahman)library(sqldf)library(ggplot2)Next, we are going to specify what we are looking for. In this case, career homeruns and strikeouts from players who had more than 400 homeruns.</description>

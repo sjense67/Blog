@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Histogram on DS by SJ</title>
+    <link>https://dsbysj.netlify.com/tags/histogram/</link>
+    <description>Recent content in Histogram on DS by SJ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Powered by [Hugo](http://gohugo.io).</copyright>
+    <lastBuildDate>Fri, 29 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://dsbysj.netlify.com/tags/histogram/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Happy Histograms</title>
+      <link>https://dsbysj.netlify.com/post/happy-histograms/</link>
+      <pubDate>Fri, 29 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsbysj.netlify.com/post/happy-histograms/</guid>
+      <description>Up next on the data visualization journey: Histograms!
+Histograms what people often think of as bar graphs. They show the spread and shape of a single set of data. For our example, let’s look at the weights of MLB players through the Master table in the Lahman database. While some weights aren’t available, the program with automatically exclude those rows, which do not have a numerical value.
+library(Lahman)library(sqldf)library(ggplot2)Here is the sql request:</description>
+    </item>
+    
+  </channel>
+</rss>

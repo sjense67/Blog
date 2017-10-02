@@ -1,0 +1,33 @@
+---
+title: Time for Time Series
+author: Sophia Jensen
+date: '2017-09-29'
+slug: time-for-time-series
+categories:
+  - ggplot2
+  - R
+tags:
+  - data visualization
+  - sql
+  - time series
+---
+
+
+
+<p>Hello again! This time we are going to look at data visualization in the form of time series!</p>
+<p>A time series is similar to a scatterplot, in the way that it has two sets of data against each other. However, one of those sets of data is time. Let’s get started!</p>
+<pre class="r"><code>library(Lahman)
+library(sqldf)
+library(ggplot2)</code></pre>
+<p>We will look at Babe Ruth’s homeruns over his twenty-two seasons. Here is the sql request:</p>
+<pre class="r"><code>query&lt;-&quot;SELECT yearID,HR FROM Batting WHERE playerID=&#39;ruthba01&#39;&quot;
+result&lt;-sqldf(query)</code></pre>
+<p>Now, we will put it into the time series visualization! This process is almost exactly the same as the process we used for scatterplots. The only difference is that because the data is spread over time, we can connect the data points to make a nice line!</p>
+<pre class="r"><code>ggplot()+
+  geom_point(data=result,aes(x=yearID,y=HR),size=1/2)+
+  geom_line(data=result,aes(x=yearID,y=HR))+
+  ggtitle(&quot;Babe Ruth&#39;s Homeruns by Year&quot;)+
+  xlab(&quot;Year&quot;)+
+  ylab(&quot;Number of Homeruns&quot;)</code></pre>
+<p><img src="/post/2017-09-29-time-for-time-series_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p>Congrats Babe Ruth, on the great career! And congrats to you, on learning time series! Tune in again later!</p>
