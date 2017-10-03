@@ -7,10 +7,33 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Powered by [Hugo](http://gohugo.io).</copyright>
-    <lastBuildDate>Fri, 29 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Oct 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://dsbysj.netlify.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Bar Plots, Bar None</title>
+      <link>https://dsbysj.netlify.com/post/bar-plots-bar-none/</link>
+      <pubDate>Tue, 03 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsbysj.netlify.com/post/bar-plots-bar-none/</guid>
+      <description>Welcome back to our final installment of ggplot2 data visualization! Today, we are doing bar plots!
+library(Lahman)library(sqldf)library(ggplot2)A bar plot lays out the different levels of an attribute or factor! We will look at the team homerun totals for all the MLB teams in 1980.
+query&amp;lt;-&amp;quot;SELECT name,HR FROM Teams WHERE yearID=1980 ORDER BY HR &amp;quot;result&amp;lt;-sqldf(query)result$name&amp;lt;-factor(result$name,levels=result$name)The last line is saving the information as a factor, and letting the system know that the order the results appear in the order we specified, not default alphabetical.</description>
+    </item>
+    
+    <item>
+      <title>Other Projects</title>
+      <link>https://dsbysj.netlify.com/post/other-projects/</link>
+      <pubDate>Tue, 03 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsbysj.netlify.com/post/other-projects/</guid>
+      <description>Hey y’all!
+I am going to put the link to my github website about how to use SQL in here again for reference:
+https://sjense67.github.io/Website/
+And then I am going to add the link for another on of my github websites, which I am using to explore dashboards! Come see what I’m doing, and don’t forget that you can always email me or find me on social media to get in contact!</description>
+    </item>
     
     <item>
       <title>Happy Histograms</title>

@@ -45,6 +45,65 @@
         
             <article class="post">
     
+<h1><a href="https://dsbysj.netlify.com/post/bar-plots-bar-none/" title="Bar Plots, Bar None">Bar Plots, Bar None</a></h1>
+
+<footer class="post-info">Posted on <span class="post-meta"><time datetime="2017.10.03">2017.10.03</time>
+
+    &middot; Tagged in
+        
+        <a href="https://dsbysj.netlify.com/tags/data-visualization">data visualization</a>, 
+        
+        <a href="https://dsbysj.netlify.com/tags/sql">sql</a>, 
+        
+        <a href="https://dsbysj.netlify.com/tags/bar-plots">bar plots</a>
+        
+    
+
+</span>
+</footer>
+
+    <p>Welcome back to our final installment of ggplot2 data visualization! Today, we are doing bar plots!
+library(Lahman)
+library(sqldf)
+library(ggplot2)
+A bar plot lays out the different levels of an attribute or factor! We will look at the team homerun totals for all the MLB teams in 1980.
+query&lt;-&quot;SELECT name,HR FROM Teams WHERE yearID=1980 ORDER BY HR &quot;
+result&lt;-sqldf(query)
+result$name&lt;-factor(result$name,levels=result$name)
+The last line is saving the information as a factor, and letting the system know that the order the results appear in the order we specified, not default alphabetical.&hellip;</p>
+    <a href="https://dsbysj.netlify.com/post/bar-plots-bar-none/" title="Bar Plots, Bar None">Read more &raquo;</a>
+</article>
+
+        
+            <article class="post">
+    
+<h1><a href="https://dsbysj.netlify.com/post/other-projects/" title="Other Projects">Other Projects</a></h1>
+
+<footer class="post-info">Posted on <span class="post-meta"><time datetime="2017.10.03">2017.10.03</time>
+
+    &middot; Tagged in
+        
+        <a href="https://dsbysj.netlify.com/tags/data-science">data science</a>, 
+        
+        <a href="https://dsbysj.netlify.com/tags/data-visualization">data visualization</a>, 
+        
+        <a href="https://dsbysj.netlify.com/tags/sql">sql</a>
+        
+    
+
+</span>
+</footer>
+
+    <p>Hey y’all!
+I am going to put the link to my github website about how to use SQL in here again for reference:
+<a href="https://sjense67.github.io/Website/">https://sjense67.github.io/Website/</a>
+And then I am going to add the link for another on of my github websites, which I am using to explore dashboards! Come see what I’m doing, and don’t forget that you can always email me or find me on social media to get in contact!&hellip;</p>
+    <a href="https://dsbysj.netlify.com/post/other-projects/" title="Other Projects">Read more &raquo;</a>
+</article>
+
+        
+            <article class="post">
+    
 <h1><a href="https://dsbysj.netlify.com/post/happy-histograms/" title="Happy Histograms">Happy Histograms</a></h1>
 
 <footer class="post-info">Posted on <span class="post-meta"><time datetime="2017.09.29">2017.09.29</time>

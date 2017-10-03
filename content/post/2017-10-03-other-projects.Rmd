@@ -1,0 +1,24 @@
+---
+title: Other Projects
+author: Sophia Jensen
+date: '2017-10-03'
+slug: other-projects
+categories:
+  - ggplot2
+  - R
+tags:
+  - data science
+  - data visualization
+  - sql
+---
+
+Hey y'all!
+
+I am going to put the link to my github website about how to use SQL in here again for reference:
+
+https://sjense67.github.io/Website/
+
+And then I am going to add the link for another on of my github websites, which I am using to explore dashboards! Come see what I'm doing, and don't forget that you can always email me or find me on social media to get in contact!
+
+Dashboard site: https://sjense67.github.io/Dashboard/
+

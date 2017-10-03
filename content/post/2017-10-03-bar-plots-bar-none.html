@@ -1,0 +1,35 @@
+---
+title: Bar Plots, Bar None
+author: Sophia Jensen
+date: '2017-10-03'
+slug: bar-plots-bar-none
+categories:
+  - ggplot2
+  - R
+tags:
+  - data visualization
+  - sql
+  - bar plots
+---
+
+
+
+<p>Welcome back to our final installment of ggplot2 data visualization! Today, we are doing bar plots!</p>
+<pre class="r"><code>library(Lahman)
+library(sqldf)
+library(ggplot2)</code></pre>
+<p>A bar plot lays out the different levels of an attribute or factor! We will look at the team homerun totals for all the MLB teams in 1980.</p>
+<pre class="r"><code>query&lt;-&quot;SELECT name,HR FROM Teams WHERE yearID=1980 ORDER BY HR &quot;
+result&lt;-sqldf(query)
+
+result$name&lt;-factor(result$name,levels=result$name)</code></pre>
+<p>The last line is saving the information as a factor, and letting the system know that the order the results appear in the order we specified, not default alphabetical.</p>
+<pre class="r"><code>ggplot()+
+  geom_bar(data=result,aes(x=name,y=HR),stat=&#39;identity&#39;)+
+  coord_flip()+
+  ggtitle(&quot;1980 Team Homerun Totals&quot;)+
+  xlab(&quot;Team Name&quot;)+
+  ylab(&quot;Homeruns&quot;)</code></pre>
+<p><img src="/post/2017-10-03-bar-plots-bar-none_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p>And there we have it! It is the same process as the other data visualizations that we have done through ggplot2. Differences are: saying geom_bar to specify bar plot format, saying stat=‘identity’ to get the correct label, and using coord_flip to put the bars horizontal instead of vertical.</p>
+<p>That’s all folks! Thanks for hanging out!</p>

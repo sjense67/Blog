@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://dsbysj.netlify.com/post/bar-plots-bar-none/</loc>
+    <lastmod>2017-10-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dsbysj.netlify.com/post/other-projects/</loc>
+    <lastmod>2017-10-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://dsbysj.netlify.com/post/happy-histograms/</loc>
     <lastmod>2017-09-29T00:00:00+00:00</lastmod>
   </url>
@@ -23,6 +33,12 @@
   </url>
   
   <url>
+    <loc>https://dsbysj.netlify.com/tags/bar-plots/</loc>
+    <lastmod>2017-10-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://dsbysj.netlify.com/tags/beginning/</loc>
     <lastmod>2017-09-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -35,25 +51,25 @@
   
   <url>
     <loc>https://dsbysj.netlify.com/</loc>
-    <lastmod>2017-09-29T00:00:00+00:00</lastmod>
+    <lastmod>2017-10-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://dsbysj.netlify.com/tags/data-science/</loc>
-    <lastmod>2017-09-28T00:00:00+00:00</lastmod>
+    <lastmod>2017-10-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://dsbysj.netlify.com/tags/data-visualization/</loc>
-    <lastmod>2017-09-29T00:00:00+00:00</lastmod>
+    <lastmod>2017-10-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://dsbysj.netlify.com/categories/ggplot2/</loc>
-    <lastmod>2017-09-29T00:00:00+00:00</lastmod>
+    <lastmod>2017-10-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -65,13 +81,13 @@
   
   <url>
     <loc>https://dsbysj.netlify.com/post/</loc>
-    <lastmod>2017-09-29T00:00:00+00:00</lastmod>
+    <lastmod>2017-10-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://dsbysj.netlify.com/categories/r/</loc>
-    <lastmod>2017-09-29T00:00:00+00:00</lastmod>
+    <lastmod>2017-10-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -83,13 +99,13 @@
   
   <url>
     <loc>https://dsbysj.netlify.com/tags/sql/</loc>
-    <lastmod>2017-09-29T00:00:00+00:00</lastmod>
+    <lastmod>2017-10-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://dsbysj.netlify.com/tags/</loc>
-    <lastmod>2017-09-28T00:00:00+00:00</lastmod>
+    <lastmod>2017-10-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

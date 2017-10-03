@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Ggplot2 &middot; DS by SJ</title>
+        <title>Bar Plots &middot; DS by SJ</title>
         <meta name="author">
         <meta name="description" content="Mercyhurst Intro to Data Science">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -73,120 +73,6 @@ result&lt;-sqldf(query)
 result$name&lt;-factor(result$name,levels=result$name)
 The last line is saving the information as a factor, and letting the system know that the order the results appear in the order we specified, not default alphabetical.&hellip;</p>
     <a href="https://dsbysj.netlify.com/post/bar-plots-bar-none/" title="Bar Plots, Bar None">Read more &raquo;</a>
-</article>
-
-        
-            <article class="post">
-    
-<h1><a href="https://dsbysj.netlify.com/post/other-projects/" title="Other Projects">Other Projects</a></h1>
-
-<footer class="post-info">Posted on <span class="post-meta"><time datetime="2017.10.03">2017.10.03</time>
-
-    &middot; Tagged in
-        
-        <a href="https://dsbysj.netlify.com/tags/data-science">data science</a>, 
-        
-        <a href="https://dsbysj.netlify.com/tags/data-visualization">data visualization</a>, 
-        
-        <a href="https://dsbysj.netlify.com/tags/sql">sql</a>
-        
-    
-
-</span>
-</footer>
-
-    <p>Hey y’all!
-I am going to put the link to my github website about how to use SQL in here again for reference:
-<a href="https://sjense67.github.io/Website/">https://sjense67.github.io/Website/</a>
-And then I am going to add the link for another on of my github websites, which I am using to explore dashboards! Come see what I’m doing, and don’t forget that you can always email me or find me on social media to get in contact!&hellip;</p>
-    <a href="https://dsbysj.netlify.com/post/other-projects/" title="Other Projects">Read more &raquo;</a>
-</article>
-
-        
-            <article class="post">
-    
-<h1><a href="https://dsbysj.netlify.com/post/happy-histograms/" title="Happy Histograms">Happy Histograms</a></h1>
-
-<footer class="post-info">Posted on <span class="post-meta"><time datetime="2017.09.29">2017.09.29</time>
-
-    &middot; Tagged in
-        
-        <a href="https://dsbysj.netlify.com/tags/data-visualization">data visualization</a>, 
-        
-        <a href="https://dsbysj.netlify.com/tags/sql">sql</a>, 
-        
-        <a href="https://dsbysj.netlify.com/tags/histogram">histogram</a>
-        
-    
-
-</span>
-</footer>
-
-    <p>Up next on the data visualization journey: Histograms!
-Histograms what people often think of as bar graphs. They show the spread and shape of a single set of data. For our example, let’s look at the weights of MLB players through the Master table in the Lahman database. While some weights aren’t available, the program with automatically exclude those rows, which do not have a numerical value.
-library(Lahman)
-library(sqldf)
-library(ggplot2)
-Here is the sql request:&hellip;</p>
-    <a href="https://dsbysj.netlify.com/post/happy-histograms/" title="Happy Histograms">Read more &raquo;</a>
-</article>
-
-        
-            <article class="post">
-    
-<h1><a href="https://dsbysj.netlify.com/post/time-for-time-series/" title="Time for Time Series">Time for Time Series</a></h1>
-
-<footer class="post-info">Posted on <span class="post-meta"><time datetime="2017.09.29">2017.09.29</time>
-
-    &middot; Tagged in
-        
-        <a href="https://dsbysj.netlify.com/tags/data-visualization">data visualization</a>, 
-        
-        <a href="https://dsbysj.netlify.com/tags/sql">sql</a>, 
-        
-        <a href="https://dsbysj.netlify.com/tags/time-series">time series</a>
-        
-    
-
-</span>
-</footer>
-
-    <p>Hello again! This time we are going to look at data visualization in the form of time series!
-A time series is similar to a scatterplot, in the way that it has two sets of data against each other. However, one of those sets of data is time. Let’s get started!
-library(Lahman)
-library(sqldf)
-library(ggplot2)
-We will look at Babe Ruth’s homeruns over his twenty-two seasons. Here is the sql request:&hellip;</p>
-    <a href="https://dsbysj.netlify.com/post/time-for-time-series/" title="Time for Time Series">Read more &raquo;</a>
-</article>
-
-        
-            <article class="post">
-    
-<h1><a href="https://dsbysj.netlify.com/post/scatterplot-fun/" title="Scatterplot Fun">Scatterplot Fun</a></h1>
-
-<footer class="post-info">Posted on <span class="post-meta"><time datetime="2017.09.28">2017.09.28</time>
-
-    &middot; Tagged in
-        
-        <a href="https://dsbysj.netlify.com/tags/scatterplot">scatterplot</a>, 
-        
-        <a href="https://dsbysj.netlify.com/tags/data-science">data science</a>, 
-        
-        <a href="https://dsbysj.netlify.com/tags/data-visualization">data visualization</a>
-        
-    
-
-</span>
-</footer>
-
-    <p>Here we go on our first adventure in data visualization. Let’s take the homeruns and strikeouts from the Lahman database of baseball statistics and make a scatterplot!
-First, we need to load our libraries. This tells the computer what sets of data to look at!
-library(Lahman)
-library(sqldf)
-library(ggplot2)
-Next, we are going to specify what we are looking for. In this case, career homeruns and strikeouts from players who had more than 400 homeruns.&hellip;</p>
-    <a href="https://dsbysj.netlify.com/post/scatterplot-fun/" title="Scatterplot Fun">Read more &raquo;</a>
 </article>
 
         

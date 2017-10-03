@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Data Science &middot; DS by SJ</title>
+        <title>DS by SJ</title>
         <meta name="author">
         <meta name="description" content="Mercyhurst Intro to Data Science">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -39,103 +39,54 @@
           </div>
         </header>
 
+
 <div class="container clearfix">
     <main role="main" class="content">
-        <a class="btn home" href="https://dsbysj.netlify.com/" title="Back to home">&laquo; Back to home</a>
-        
-        
-            <article class="post">
-    
-<h1><a href="https://dsbysj.netlify.com/post/other-projects/" title="Other Projects">Other Projects</a></h1>
+        <article class="post">
+            <a class="btn home" href="https://dsbysj.netlify.com/" title="Back to home">&laquo; Back to home</a>
+            
+<h1><a href="https://dsbysj.netlify.com/post/bar-plots-bar-none/" title="Bar Plots, Bar None">Bar Plots, Bar None</a></h1>
 
 <footer class="post-info">Posted on <span class="post-meta"><time datetime="2017.10.03">2017.10.03</time>
 
     &middot; Tagged in
         
-        <a href="https://dsbysj.netlify.com/tags/data-science">data science</a>, 
-        
         <a href="https://dsbysj.netlify.com/tags/data-visualization">data visualization</a>, 
-        
-        <a href="https://dsbysj.netlify.com/tags/sql">sql</a>
-        
-    
-
-</span>
-</footer>
-
-    <p>Hey y’all!
-I am going to put the link to my github website about how to use SQL in here again for reference:
-<a href="https://sjense67.github.io/Website/">https://sjense67.github.io/Website/</a>
-And then I am going to add the link for another on of my github websites, which I am using to explore dashboards! Come see what I’m doing, and don’t forget that you can always email me or find me on social media to get in contact!&hellip;</p>
-    <a href="https://dsbysj.netlify.com/post/other-projects/" title="Other Projects">Read more &raquo;</a>
-</article>
-
-        
-            <article class="post">
-    
-<h1><a href="https://dsbysj.netlify.com/post/scatterplot-fun/" title="Scatterplot Fun">Scatterplot Fun</a></h1>
-
-<footer class="post-info">Posted on <span class="post-meta"><time datetime="2017.09.28">2017.09.28</time>
-
-    &middot; Tagged in
-        
-        <a href="https://dsbysj.netlify.com/tags/scatterplot">scatterplot</a>, 
-        
-        <a href="https://dsbysj.netlify.com/tags/data-science">data science</a>, 
-        
-        <a href="https://dsbysj.netlify.com/tags/data-visualization">data visualization</a>
-        
-    
-
-</span>
-</footer>
-
-    <p>Here we go on our first adventure in data visualization. Let’s take the homeruns and strikeouts from the Lahman database of baseball statistics and make a scatterplot!
-First, we need to load our libraries. This tells the computer what sets of data to look at!
-library(Lahman)
-library(sqldf)
-library(ggplot2)
-Next, we are going to specify what we are looking for. In this case, career homeruns and strikeouts from players who had more than 400 homeruns.&hellip;</p>
-    <a href="https://dsbysj.netlify.com/post/scatterplot-fun/" title="Scatterplot Fun">Read more &raquo;</a>
-</article>
-
-        
-            <article class="post">
-    
-<h1><a href="https://dsbysj.netlify.com/post/welcome-to-data-science/" title="Welcome to Data Science">Welcome to Data Science</a></h1>
-
-<footer class="post-info">Posted on <span class="post-meta"><time datetime="2017.09.28">2017.09.28</time>
-
-    &middot; Tagged in
         
         <a href="https://dsbysj.netlify.com/tags/sql">sql</a>, 
         
-        <a href="https://dsbysj.netlify.com/tags/data-science">data science</a>, 
-        
-        <a href="https://dsbysj.netlify.com/tags/beginning">beginning</a>
+        <a href="https://dsbysj.netlify.com/tags/bar-plots">bar plots</a>
         
     
 
 </span>
 </footer>
 
-    <p>Hello!
-Welcome to my blog about Dr. Redmond’s Intro to Data Science class at Mercyhurst University! This blog is being created for and utilized in the MIS 150 class. We will be going through some data visualization tools. We will be using R Studio, SQL, and ggplot primarily to do this. If you are unfamiliar with SQL, feel free to go check out my website of tutorials and examples at <a href="https://sjense67">https://sjense67</a>.&hellip;</p>
-    <a href="https://dsbysj.netlify.com/post/welcome-to-data-science/" title="Welcome to Data Science">Read more &raquo;</a>
-</article>
+            <p>Welcome back to our final installment of ggplot2 data visualization! Today, we are doing bar plots!</p>
+<pre class="r"><code>library(Lahman)
+library(sqldf)
+library(ggplot2)</code></pre>
+<p>A bar plot lays out the different levels of an attribute or factor! We will look at the team homerun totals for all the MLB teams in 1980.</p>
+<pre class="r"><code>query&lt;-&quot;SELECT name,HR FROM Teams WHERE yearID=1980 ORDER BY HR &quot;
+result&lt;-sqldf(query)
 
+result$name&lt;-factor(result$name,levels=result$name)</code></pre>
+<p>The last line is saving the information as a factor, and letting the system know that the order the results appear in the order we specified, not default alphabetical.</p>
+<pre class="r"><code>ggplot()+
+  geom_bar(data=result,aes(x=name,y=HR),stat=&#39;identity&#39;)+
+  coord_flip()+
+  ggtitle(&quot;1980 Team Homerun Totals&quot;)+
+  xlab(&quot;Team Name&quot;)+
+  ylab(&quot;Homeruns&quot;)</code></pre>
+<p><img src="/post/2017-10-03-bar-plots-bar-none_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p>And there we have it! It is the same process as the other data visualizations that we have done through ggplot2. Differences are: saying geom_bar to specify bar plot format, saying stat=‘identity’ to get the correct label, and using coord_flip to put the bars horizontal instead of vertical.</p>
+<p>That’s all folks! Thanks for hanging out!</p>
+
+            
+
+        </article>
         
-        <div class="pagination">
-<nav>
-
-	<p class="counter">Page 1 of 1</p>
-
-
-</nav>
-</div>
-
     </main>
-
     <aside class="author">
   <img class="profile-image" src="https://dsbysj.netlify.com/img/Profile.jpg" alt="Sophia Jensen" />
   <p class="name">by 
@@ -172,6 +123,7 @@ Welcome to my blog about Dr. Redmond’s Intro to Data Science class at Mercyhu
 </aside>
 
 </div>
+
 <footer class="main-footer">
   <div class="container clearfix">
         
