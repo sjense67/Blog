@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Powered by [Hugo](http://gohugo.io).</copyright>
-    <lastBuildDate>Tue, 03 Oct 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Oct 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://dsbysj.netlify.com/categories/r/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>For the Test</title>
+      <link>https://dsbysj.netlify.com/post/for-the-test/</link>
+      <pubDate>Tue, 17 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://dsbysj.netlify.com/post/for-the-test/</guid>
+      <description>Here are some notes from the review session on Monday night:
+Make sure that you look for the key words in the questions like sum or average. Take your time and sketch out what information you need, where it’s coming from, and how to get it.
+Remeber that scatter plots are two sets of data, timeseries are scatterplots with x being time, histograms are one set of data, and bar plots are two sets of data, with one being a factor.</description>
+    </item>
     
     <item>
       <title>Bar Plots, Bar None</title>
